@@ -1,0 +1,25 @@
+.input-Component {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+
+.input-Component[type="submit"] {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.571);
+    transition: 400ms;
+}
+
+.input-Component::placeholder {
+    color: #444;
+}

@@ -1,0 +1,36 @@
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 400ms;
+}
+
+.cart-item .item-img {
+    height: 50px;
+}
+
+.cart-item .item-img img {
+    height: 100%;
+}
+
+
+.increment, .decrement {
+    padding: 6px 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #8f4eff;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.increment:hover, .decrement:hover {
+    background-color: #7d35f9;
+}

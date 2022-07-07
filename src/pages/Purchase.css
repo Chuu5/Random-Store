@@ -1,0 +1,155 @@
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    gap: 30px;
+    padding: 20px;
+
+    margin-bottom: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(159, 158, 158);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.607);
+}
+
+.card .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #161d34
+}
+
+.text h2 {
+    font-size: 20px;
+}
+
+.card .img-container {
+    width: 200px;
+    background-color: slategrey;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.card .img-container img {
+    max-width: 100%;
+    height: 100px;
+
+}
+
+.card .img-container .counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    color: #222;
+    background-color: #e1e5ee;
+
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    right: -20px;
+    z-index: 200;
+
+    
+    border-radius: 50%;
+    transition: 400ms;
+}
+
+.card .img-container .counter:hover {
+    background-color: #c6cad1;
+}
+
+.card .add-Cart {
+    background-color: transparent;
+    padding-top: 20px;
+    color: #222;
+    font-size: 20px;
+    
+    border: none;
+    outline: none;
+    border-top: 1px solid #e1e5ee ;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.card .add-Cart:hover {
+    color: #0e48fe;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    position: fixed;
+    right: 0;
+    width: 500px;
+    background-color: #d78241;
+    z-index: 200;
+    bottom: 0;
+    padding: 20px;
+    transition: 400ms;
+    height: 10%;
+}
+
+.cart.opened {
+    flex: 1;
+    transform: translateY(0);
+    width: 600px;
+    height: 80%;
+}
+
+
+.cart:hover {
+    background-color: #f1944d;
+}
+
+.cart-title {
+    display: flex;
+    padding-inline: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-title button {
+    
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    
+    margin-left: 50px;
+}
+
+.cart .clear {
+    margin-top: auto;
+    padding: 8px 10px;
+    width: 40%;
+    
+    
+    background-color: #0035e4;
+    color: white;
+    border: 1px solid #888;
+    outline: none;
+    cursor: pointer;
+    transition: 600ms;
+}
+
+.cart .clear:hover {
+    background-color: #335be1;
+}

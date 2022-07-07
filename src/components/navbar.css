@@ -1,0 +1,37 @@
+nav {
+    height: 15vh;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+
+
+    color: white;
+}
+
+.logo svg {
+    font-size: 32px;
+}
+
+.menu-links {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.menu-links a {
+    color: white;
+}
+
+.menu-links .cart-btn {
+    padding: 10px 30px;
+    background-color: #6329c7;
+    border: none;
+    margin-left: 10px;
+    color: white;
+
+    cursor: pointer;
+}
