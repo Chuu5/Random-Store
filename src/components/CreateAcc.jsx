@@ -11,11 +11,11 @@ import Data from "../../db.json"
 
 
 const schema = yup.object({
-    email: yup.string().required("Esse campo é obrigatorio"),
-    userName: yup.string().required("Esse campo é obrigatorio").min(3, "Minimo de 3 caracteres"),
-    password: yup.string().required("Esse campo é obrigatorio").min(4, "Minimo de 4 caracteres"),
+    email: yup.string().email("Email invalido").required("Esse campo é obrigatorio"),
+    userName: yup.string().required("Esse campo é obrigatorio").min(4, "Minimo de 4 caracteres"),
+    password: yup.string().required("Esse campo é obrigatorio").min(5, "Minimo de 5 caracteres"),
     confirmPassword: yup.string().required("Esse campo é obrigatorio")
-    .min(3, "Minimo de 4 caracteres").oneOf([yup.ref('password')], 'Senhas devem ser iguais')
+    .min(5, "Minimo de 5 caracteres").oneOf([yup.ref('password')], 'Senhas devem ser iguais')
 }).required();
 
 function CreateAcc( { display } ) {
@@ -26,7 +26,11 @@ function CreateAcc( { display } ) {
         resolver: yupResolver(schema)
       });
 
+
+
+
     const onSubmit = data => {
+
         const emailExist = users.find( (user) => user.email === data.email)
 
         if(emailExist) {
@@ -68,7 +72,7 @@ function CreateAcc( { display } ) {
                 <div className="Field">
                     <MdEmail />
                     <input 
-                    type={"email"} 
+                    type={"text"} 
                     name={"email"} 
                     placeholder={"Email"} 
                     className="input-Component"

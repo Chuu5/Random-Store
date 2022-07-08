@@ -2,19 +2,16 @@
   "users": [
     {
       "id": 1,
-      "userName": "somename",
-      "email": "email@email",
-      "password": "aaaa"
-    },
-    {
-      "id": 2
+      "userName": "novouser3",
+      "password": "bbbb",
+      "email": "email@email"
     },
     {
       "userName": "aaaa",
-      "email": "email@emaila",
-      "password": "aaaa",
-      "confirmPassword": "aaaa",
-      "id": 3
+      "email": "email@hotmail.com",
+      "password": "bbbb",
+      "confirmPassword": "bbbb",
+      "id": 2
     }
   ],
   "products": [

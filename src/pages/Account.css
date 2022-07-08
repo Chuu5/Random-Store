@@ -1,6 +1,11 @@
 .info-container {
     display: flex;
-    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border-top: 1px solid black;
 }
 
 .info-text {
@@ -10,8 +15,27 @@
 
 .info-fields {
     display: flex;
+    width: 30%;
     flex-direction: column;
 
-    margin-top: 20px;
-    gap: 20px;
+    gap: 25px;
+}
+
+.info-fields input {
+    padding: 6px 20px;
+}
+
+.info-fields input:focus {
+    outline: 1px solid #965ef8;
+}
+
+.info-fields button {
+    padding: 10px;
+    width: 50%;
+    color: white;
+
+    border: none;
+    outline: none;
+    background-color: #7d37f6;
+    cursor: pointer;
 }

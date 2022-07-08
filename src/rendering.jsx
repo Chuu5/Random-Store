@@ -16,7 +16,7 @@ function Rendering() {
       <Route path='/' element={<Nav user={user} />}>
         <Route path='/' element={<Home setUser={setUser}/>}/>
         <Route path='/purchase' element={<Purchase/>}/>
-        <Route path='/account' element={<Account />}/>
+        <Route path='/account' element={<Account setUser={setUser} user={user} />}/>
       </Route>
     </Routes>
     )
