@@ -1,0 +1,17 @@
+.info-container {
+    display: flex;
+    height: 200px;
+}
+
+.info-text {
+    width: 400px;
+    font-size: 14px;
+}
+
+.info-fields {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    gap: 20px;
+}

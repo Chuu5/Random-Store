@@ -2,7 +2,7 @@ import { BsCoin } from "react-icons/bs"
 import { Outlet, Link } from "react-router-dom";
 import "./navbar.css"
 
-function Nav() {
+function Nav( {user} ) {
     return (
         <>
             <nav>
@@ -19,13 +19,11 @@ function Nav() {
                     <li>
                         <Link to={"/purchase"}>Purchase</Link>
                     </li>
+
                     <li>
-                        <Link to={"/cart"}>
-                            <button className="cart-btn">
-                                Cart
-                            </button>
-                        </Link>
+                        <Link to={"/account"}>{user.userName}</Link>
                     </li>
+
                 </ul>
 
             </nav>

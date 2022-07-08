@@ -1,56 +1,70 @@
 {
-    "users": [
-        
-    ],
-    "products": [
-        {
-            "id": 1,
-            "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-            "title": "Card Titulo1",
-            "description": "Descrição Card",
-            "price": "70",
-            "counter": 0
-        },
-        {
-            "id": 2,
-            "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-            "title": "Card Titulo2",
-            "description": "Descrição Card",
-            "price": "50",
-            "counter": 0      
-        },
-        {
-            "id": 3,
-            "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-            "title": "Card Titulo3",
-            "description": "Descrição Card",
-            "price": "80",
-            "counter": 0
-        },
-        {
-            "id": 4,
-            "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-            "title": "Card Titulo4",
-            "description": "Descrição Card",
-            "price": "40",
-            "counter": 0
-        },
-        {
-            "id": 5,
-            "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-            "title": "Card Titulo5",
-            "description": "Descrição Card",
-            "price": "30",
-            "counter": 0
-        },
-        {
-            "id": 6,
-            "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-            "title": "Card Titulo6",
-            "description": "Descrição Card",
-            "price": "20",
-            "counter": 0
-        }
-        
-    ]
+  "users": [
+    {
+      "id": 1,
+      "userName": "somename",
+      "email": "email@email",
+      "password": "aaaa"
+    },
+    {
+      "id": 2
+    },
+    {
+      "userName": "aaaa",
+      "email": "email@emaila",
+      "password": "aaaa",
+      "confirmPassword": "aaaa",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
+      "title": "Card Titulo1",
+      "description": "Descrição Card",
+      "price": "70",
+      "counter": 0
+    },
+    {
+      "id": 2,
+      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
+      "title": "Card Titulo2",
+      "description": "Descrição Card",
+      "price": "50",
+      "counter": 0
+    },
+    {
+      "id": 3,
+      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
+      "title": "Card Titulo3",
+      "description": "Descrição Card",
+      "price": "80",
+      "counter": 0
+    },
+    {
+      "id": 4,
+      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
+      "title": "Card Titulo4",
+      "description": "Descrição Card",
+      "price": "40",
+      "counter": 0
+    },
+    {
+      "id": 5,
+      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
+      "title": "Card Titulo5",
+      "description": "Descrição Card",
+      "price": "30",
+      "counter": 0
+    },
+    {
+      "id": 6,
+      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
+      "title": "Card Titulo6",
+      "description": "Descrição Card",
+      "price": "20",
+      "counter": 0
+    }
+  ]
 }

@@ -26,12 +26,3 @@ nav {
     color: white;
 }
 
-.menu-links .cart-btn {
-    padding: 10px 30px;
-    background-color: #6329c7;
-    border: none;
-    margin-left: 10px;
-    color: white;
-
-    cursor: pointer;
-}

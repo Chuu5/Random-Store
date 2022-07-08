@@ -7,7 +7,7 @@ import "./createAcc.css"
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
-import { useState } from "react";
+import Data from "../../db.json"
 
 
 const schema = yup.object({
@@ -20,12 +20,34 @@ const schema = yup.object({
 
 function CreateAcc( { display } ) {
 
+    const users = Data.users
 
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema)
       });
 
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        const emailExist = users.find( (user) => user.email === data.email)
+
+        if(emailExist) {
+            return alert("email já registrado")
+        } else {
+            fetch("http://localhost:5000/users/", {
+                    method: "POST",
+                    body: JSON.stringify({
+                        ...data
+                    }),
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8"
+                    }
+                })
+                .then(response => response.json())
+                .then(user => console.log(user))
+                .catch(e => console.error(e)) 
+                alert("Email Registrado com sucesso")
+                display(false)
+        }
+    }
     
 
     
@@ -35,7 +57,8 @@ function CreateAcc( { display } ) {
                 <h2>Cadastro</h2>
                 <div className="Field">
                     <AiOutlineUser />
-                    <input type={"text"} name={"name"} placeholder={"UserName"} 
+                    <input 
+                    type={"text"} name={"name"} placeholder={"UserName"} 
                     className="input-Component"
                     {...register( "userName" , { required: true } )}
                     />
@@ -44,9 +67,16 @@ function CreateAcc( { display } ) {
 
                 <div className="Field">
                     <MdEmail />
-                    <input type={"email"} name={"email"} placeholder={"Email"} 
+                    <input 
+                    type={"email"} 
+                    name={"email"} 
+                    placeholder={"Email"} 
                     className="input-Component"
-                    {...register( "email" , { required: true } )}/>
+                    {...register( "email" , { 
+                        required: true
+                    })}
+                
+                    />
                 </div>
                 <p>{errors.email?.message}</p>
 

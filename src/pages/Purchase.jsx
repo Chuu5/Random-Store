@@ -22,6 +22,7 @@ function Purchase() {
     
     const [totalPrice, setTotalPrice] = useState(0)
 
+
     const onAdd = (product) => {
         setQuantity(quantity + 1)
 
