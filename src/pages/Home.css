@@ -7,7 +7,7 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: rgb(204, 201, 201);
+    background-color: #4444B1;
     font-family: 'Roboto', sans-serif
 }
 
@@ -24,6 +24,23 @@ a {
 
 .home-text, .form{
     flex: 1;
+}
+
+.home-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-text h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.home-text h3 {
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 
@@ -43,6 +60,7 @@ a {
 
 .form h3 {
     color: white;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 

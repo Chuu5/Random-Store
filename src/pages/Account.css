@@ -26,7 +26,7 @@
 }
 
 .info-fields input:focus {
-    outline: 1px solid #965ef8;
+    outline: 1px solid #333;
 }
 
 .info-fields button {

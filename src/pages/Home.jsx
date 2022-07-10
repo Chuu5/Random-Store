@@ -19,7 +19,7 @@ const schema = yup.object({
 
 
 
-function Home( {setUser} ) {
+function Home( {setUser, setLogged} ) {
   
   const [displayCreateAcc, setdisplayCreateAcc] = useState(false)
   
@@ -40,6 +40,7 @@ function Home( {setUser} ) {
 
         if(user.password === data.password) {
           setUser(user)
+          setLogged(true)
           navigate("/purchase")
         } else {
           alert("Senha Invalida")
@@ -87,7 +88,7 @@ function Home( {setUser} ) {
               <input 
               type={"password"} 
               name={"password"} 
-              placeholder={"Password"}
+              placeholder={"Senha"}
               className="input-Component"
               {...register( "password" , { required: true })} />  
             </div>
@@ -104,7 +105,7 @@ function Home( {setUser} ) {
           onClick={ () => {
             setdisplayCreateAcc(true)
           }}>
-            Create New Account
+            Criar Nova Conta
           </button>
 
 

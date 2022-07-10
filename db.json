@@ -1,17 +1,11 @@
 {
   "users": [
     {
-      "id": 1,
-      "userName": "novouser3",
-      "password": "bbbb",
-      "email": "email@email"
-    },
-    {
-      "userName": "aaaa",
-      "email": "email@hotmail.com",
-      "password": "bbbb",
-      "confirmPassword": "bbbb",
-      "id": 2
+      "userName": "uwuu",
+      "email": "email@gmail.com",
+      "password": "chuuu",
+      "confirmPassword": "chuuu",
+      "id": 1
     }
   ],
   "products": [

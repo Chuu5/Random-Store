@@ -62,7 +62,7 @@ function CreateAcc( { display } ) {
                 <div className="Field">
                     <AiOutlineUser />
                     <input 
-                    type={"text"} name={"name"} placeholder={"UserName"} 
+                    type={"text"} name={"name"} placeholder={"Nome de Usuario"} 
                     className="input-Component"
                     {...register( "userName" , { required: true } )}
                     />
@@ -86,7 +86,7 @@ function CreateAcc( { display } ) {
 
                 <div className="Field">
                     <FaLock />
-                    <input type={"password"} id="createPass" name={"CreatePass"} placeholder={"Password"} 
+                    <input type={"password"} id="createPass" name={"CreatePass"} placeholder={"Senha"} 
                     className="input-Component"
                     {...register( "password" , { required: true } )}/>
                 </div>
@@ -94,7 +94,7 @@ function CreateAcc( { display } ) {
 
                 <div className="Field">
                     <FaLock />
-                    <input type={"password"} name={"ConfirmPass"} placeholder={"Confirm Password"} 
+                    <input type={"password"} name={"ConfirmPass"} placeholder={"Confirmar Senha"} 
                     className="input-Component"
                     {...register( "confirmPassword" , { required: true } )}/>
                 </div>

@@ -14,7 +14,7 @@ const schema = yup.object({
     confirmPassword: yup.string().min(4, "Minimo de 4 caracteres").oneOf([yup.ref('password')], 'Senhas devem ser iguais')
 });
 
-function Account( {setUser, user} ) {
+function Account( {setUser, user, setLogged} ) {
 
     const { register, formState: { errors } } = useForm({
         resolver: yupResolver(schema)
@@ -60,9 +60,10 @@ function Account( {setUser, user} ) {
                 )
             })
             .then(response => response.json())
-            .then(data => console.log(data))
+            .then(data => data)
             .catch(e => console.error(e))
             setUser("")
+            setLogged(false)
             navigate("/")
         } else if(name.length < 4) {
             alert("Nomes precisam ser de pelo menos 4 digitos")
@@ -89,10 +90,11 @@ function Account( {setUser, user} ) {
                     )
                 })
                 .then(response => response.json())
-                .then(data => console.log(data))
+                .then(data => data)
                 .catch(e => console.error(e))
             alert("Email Alterado Com Sucesso")
             setUser("")
+            setLogged(false)
             navigate("/")
         } else if(!email.match(regex)) {
             alert("Email Invalido")
@@ -119,10 +121,11 @@ function Account( {setUser, user} ) {
                     )
                 })
                 .then(response => response.json())
-                .then(data => console.log(data))
+                .then(data => data)
                 .catch(e => console.error(e))
             alert("Senha Alterada Com Sucesso")
             setUser("")
+            setLogged(false)
             navigate("/")
         } else if (pass !== confirmPass) {
             alert("As senhas devem ser iguais")

@@ -1,0 +1,22 @@
+.logged-off {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logged-off button {
+    padding: 10px 20px;
+    background-color: #853eff;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.logged-off a {
+    text-decoration: none;
+    color: white;
+}
