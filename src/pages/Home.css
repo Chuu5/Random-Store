@@ -125,3 +125,22 @@ form .Field {
 .btn:hover, .submit-button:hover {
     background-color: #975AFF;;
 }
+
+@media (max-width: 700px) {
+    .flex-home {
+        flex-direction: column;
+        height: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        gap: 50px;
+    }
+
+    .form {
+        width: 90vw;
+    }
+
+    .createAcc form {
+        width: 80vw;
+        gap: 10px;
+    }
+}

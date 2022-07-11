@@ -34,3 +34,14 @@
 .increment:hover, .decrement:hover {
     background-color: #7d35f9;
 }
+
+@media (max-width: 600px) {
+    .cart-item {
+        gap: 10px;
+    }
+
+    .cart-item button {
+        padding: 5px;
+    }
+
+}

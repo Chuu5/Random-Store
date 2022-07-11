@@ -68,7 +68,7 @@ function Purchase() {
         <div className="container">
 
             
-            <div className="cards">
+            <section className="cards">
 
                 {products.map( (product) => {
                 
@@ -76,7 +76,7 @@ function Purchase() {
                     return <Card total={setTotalPrice} items={cartItems} onAdd={onAdd} key={product.id} product={product} />
                 })}
 
-            </div>
+            </section>
 
             <div className={`cart ${openCart ? 'opened' : ''}`}>
                 <div className="cart-title" >
@@ -89,21 +89,21 @@ function Purchase() {
                     </button>
                 </div>
 
-                
                 {openCart && (
                     <>
                         <CartOpened onRemove={onRemove} onAdd={onAdd} items={cartItems}
                         total={setTotalPrice} />
 
-                        {quantity > 0 && (
-                            <h3>Preço Total: {totalPrice} </h3>     
-                        )}
-
-                        <button className="clear" onClick={ () => {
-                            setCartItems([])
-                            setQuantity(0)
-                            setTotalPrice(0)
-                        }}>Limpar Cart</button>
+                        <div className="clear-container">
+                            {quantity > 0 && (
+                                <h3>Preço Total: {totalPrice} </h3>
+                            )}
+                            <button className="clear" onClick={ () => {
+                                setCartItems([])
+                                setQuantity(0)
+                                setTotalPrice(0)
+                            }}>Limpar Cart</button>
+                        </div>
 
                     </>
                 )}   

@@ -53,12 +53,15 @@ function Home( {setUser, setLogged} ) {
     .catch(e => console.error(e))
   }
 
+  displayCreateAcc ? document.body.style.overflow = "hidden" : document.body.style.overflow = "visible"
+
+
 
   return (
 
     <div className="container">
 
-      <div className="flex-home">
+      <section className="flex-home">
 
         <div className="home-text">
           <h2>Fictional Shopping</h2>
@@ -110,8 +113,9 @@ function Home( {setUser, setLogged} ) {
 
 
         </div>
-      </div>
+      </section>
     {displayCreateAcc && <CreateAcc display={setdisplayCreateAcc} />}
+
     </div>
   )
 }

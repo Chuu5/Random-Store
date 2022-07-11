@@ -26,8 +26,8 @@ function CartOpened({items, total, onAdd, onRemove}) {
                                 <h3 className="item-title">{item.title}</h3>
 
                                 <p className="price">R${item.price}</p>
-                                <p className="quantity">Quantidade({item.quantidade})</p>
-
+                                <p className="quantity">({item.quantidade})</p>
+                                
                                 <button className="increment" onClick={() => {
                                     onAdd(item)
                                     total( (value) => value + parseInt(item.price))
