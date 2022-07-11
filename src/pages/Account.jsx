@@ -50,7 +50,7 @@ function Account( {setUser, user, setLogged} ) {
             newUser.userName = name
             alert("Nome de Usuario Alterado Com Sucesso")
             
-            fetch(`http://localhost:5000/users/` + user.id, {
+            fetch(`https://shopping-fake-api.herokuapp.com/users/` + user.id, {
                 method: "PUT",
                 headers: {
                     "Content-type": "application/json; charset=UTF-8"
@@ -80,7 +80,7 @@ function Account( {setUser, user, setLogged} ) {
             const newUser = user
             newUser.email = email
             
-            fetch(`http://localhost:5000/users/` + user.id, {
+            fetch(`https://shopping-fake-api.herokuapp.com/users/` + user.id, {
                 method: "PUT",
                 headers: {
                     "Content-type": "application/json; charset=UTF-8"
@@ -111,7 +111,7 @@ function Account( {setUser, user, setLogged} ) {
             newUser.password = pass
             newUser.confirmPassword = confirmPass
             
-            fetch(`http://localhost:5000/users/` + user.id, {
+            fetch(`https://shopping-fake-api.herokuapp.com/users/` + user.id, {
                 method: "PUT",
                 headers: {
                     "Content-type": "application/json; charset=UTF-8"

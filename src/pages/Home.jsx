@@ -31,7 +31,7 @@ function Home( {setUser, setLogged} ) {
 
   
   const onSubmitForm = data => {
-    fetch("http://localhost:5000/users/")
+    fetch("https://shopping-fake-api.herokuapp.com/users/")
     .then(response => response.json())
     .then( (users) => {
       const user = users.find((user) => user.email === data.email)

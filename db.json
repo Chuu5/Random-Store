@@ -1,12 +1,5 @@
 {
   "users": [
-    {
-      "userName": "uwuu",
-      "email": "email@gmail.com",
-      "password": "chuuu",
-      "confirmPassword": "chuuu",
-      "id": 1
-    }
   ],
   "products": [
     {

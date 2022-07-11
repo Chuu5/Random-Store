@@ -36,7 +36,7 @@ function CreateAcc( { display } ) {
         if(emailExist) {
             return alert("email já registrado")
         } else {
-            fetch("http://localhost:5000/users/", {
+            fetch("https://shopping-fake-api.herokuapp.com/users/", {
                     method: "POST",
                     body: JSON.stringify({
                         ...data
