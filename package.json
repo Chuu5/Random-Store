@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "start" : "node server.js",
     "dev": "vite",
     "backend": "json-server --watch db.json --port 5000",
     "build": "vite build",
