@@ -4,3 +4,7 @@
  
  ![log-in section](https://cdn.discordapp.com/attachments/455792912597385227/996166560383258694/unknown.png)
  
+ ![carts section if you're logged out](https://cdn.discordapp.com/attachments/455792912597385227/996167108234838086/unknown.png)
+ 
+ ![carts section](https://cdn.discordapp.com/attachments/455792912597385227/996167596158238750/unknown.png)
+ ![changing user data section](https://cdn.discordapp.com/attachments/455792912597385227/996167818695426148/unknown.png)
