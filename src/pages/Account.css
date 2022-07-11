@@ -39,3 +39,18 @@
     background-color: #7d37f6;
     cursor: pointer;
 }
+
+@media (max-width: 500px) {
+    .info-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-fields button, .info-fields input {
+        width: 300px;
+    }
+
+    .info-text {
+        width: 100%;
+    }
+}
