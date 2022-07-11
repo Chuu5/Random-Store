@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom"
 import "./LoggedOff.css"
+import { motion } from "framer-motion"
 
 function LoggedOff() {
     return(
-        <div className="container">
+        <motion.div className="container"
+        initial={{width: 0}}
+        animate={{width: "100%"}}
+        exit={{x: window.innerWidth, transition: {duration: 0.2}}}>
+
             <div className="logged-off">
                 <h2>Você deve estar logado para Continuar</h2>
                 <Link to={"/"}>
@@ -12,7 +17,7 @@ function LoggedOff() {
                     </button>
                 </Link>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

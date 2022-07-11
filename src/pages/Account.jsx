@@ -6,6 +6,8 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
+import { motion } from "framer-motion"
+
 
 const schema = yup.object({
     email: yup.string().email("Email invalido").required("Esse campo é obrigatorio"),
@@ -136,7 +138,11 @@ function Account( {setUser, user, setLogged} ) {
     }
 
     return (
-        <div className="container">
+        <motion.div className="container"
+        initial={{width: 0}}
+        animate={{width: "100%"}}
+        exit={{x: window.innerWidth, transition: {duration: 0.2}}}>
+
             <div className="info-container">
 
                 <div className="info-text">
@@ -183,7 +189,7 @@ function Account( {setUser, user, setLogged} ) {
                     <button onClick={changeEmail}>Alterar dado</button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     ) 
 }
 

@@ -7,6 +7,8 @@ import Data from "../../db.json"
 import { useState } from "react"
 import CartOpened from "../components/CartOpened"
 
+import { motion } from "framer-motion"
+
 
 
 
@@ -65,7 +67,11 @@ function Purchase() {
     
     return (
         
-        <div className="container">
+        <motion.div className="container"
+        initial={{width: 0}}
+        animate={{width: "100%"}}
+        exit={{x: window.innerWidth, transition: {duration: 0.2}}}>
+
 
             
             <section className="cards">
@@ -110,7 +116,7 @@ function Purchase() {
 
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 

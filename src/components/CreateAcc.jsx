@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 import Data from "../../db.json"
+import {motion} from "framer-motion"
 
 
 const schema = yup.object({
@@ -56,7 +57,11 @@ function CreateAcc( { display } ) {
 
     
     return (
-        <div className="createAcc">
+        <motion.div className="createAcc"
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0, transition: {duration: 0.2}}}>
+
             <form onSubmit={handleSubmit(onSubmit)}>
                 <h2>Cadastro</h2>
                 <div className="Field">
@@ -116,7 +121,7 @@ function CreateAcc( { display } ) {
             </form>
            
 
-        </div>
+        </motion.div>
     )
 
 }

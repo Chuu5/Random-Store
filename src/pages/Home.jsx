@@ -10,6 +10,8 @@ import * as yup from "yup";
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 
+import { motion } from "framer-motion"
+// Motion é o componente que nos permite criar animações
 
 
 const schema = yup.object({
@@ -59,7 +61,10 @@ function Home( {setUser, setLogged} ) {
 
   return (
 
-    <div className="container">
+    <motion.div className="container"
+    initial={{width: 0}}
+    animate={{width: "100%"}}
+    exit={{x: window.innerWidth, transition: {duration: 0.2} }}>
 
       <section className="flex-home">
 
@@ -116,7 +121,7 @@ function Home( {setUser, setLogged} ) {
       </section>
     {displayCreateAcc && <CreateAcc display={setdisplayCreateAcc} />}
 
-    </div>
+    </motion.div>
   )
 }
 
