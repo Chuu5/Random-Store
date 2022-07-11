@@ -5,7 +5,7 @@ import { AiOutlineArrowUp } from "react-icons/ai"
 
 import Data from "../../db.json"
 import { useState } from "react"
-import CartOpened from ".././components/cartOpened"
+import CartOpened from "../components/CartOpened"
 
 
 
