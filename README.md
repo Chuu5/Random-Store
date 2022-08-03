@@ -1,4 +1,5 @@
-# fictional-shopping
+# Random-Store
+A random Store that sell random things that i like 
  
  Besides doing a simple shopping cart, i tried to do a CRUD using js to registrate a new account and enable the user to log in and log out if he wants. It's my first time trying this so i hope nothing explode or anything ;)
  
