@@ -4,49 +4,49 @@
   "products": [
     {
       "id": 1,
-      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-      "title": "Card Titulo1",
-      "description": "Descrição Card",
-      "price": "70",
+      "img": "https://animestore.cz/110394-large_default/hololive-production-nendoroid-action-figure-gawr-gura-10-cm.jpg",
+      "title": "Gawr Gura",
+      "description": "Nendoroid",
+      "price": "270",
       "counter": 0
     },
     {
       "id": 2,
-      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-      "title": "Card Titulo2",
-      "description": "Descrição Card",
+      "img": "https://ae01.alicdn.com/kf/S5b8a50b9ccb9441f8d0347749b417d8aW/Anime-Hololive-Hoodies-Ame-Aesthetic-Clothes-Women-Spring-and-Autumn-Sweatshirt-Vintage-Kawaii-Cartoon-Hoodie-Harajuku.jpg_Q90.jpg_.webp",
+      "title": "Moletom",
+      "description": "Moletom com uma Amelia Watson nele",
       "price": "50",
       "counter": 0
     },
     {
       "id": 3,
-      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-      "title": "Card Titulo3",
-      "description": "Descrição Card",
+      "img": "https://ae01.alicdn.com/kf/Ha09a5ae09cb34759b21bba8a0275d079S/2021-venda-quente-estilo-nico-popular-topos-omori-camiseta-casal-impresso-hip-pop-casual-de-alta.jpg_Q90.jpg_.webp",
+      "title": "Camiseta",
+      "description": "Camiseta Com uma Tematica do jogo Omori",
       "price": "80",
       "counter": 0
     },
     {
       "id": 4,
-      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-      "title": "Card Titulo4",
-      "description": "Descrição Card",
-      "price": "40",
+      "img": "https://m.media-amazon.com/images/I/61D0neZIgNL._AC_SY450_.jpg",
+      "title": "Headset",
+      "description": "Headset da marca RedDragon",
+      "price": "240",
       "counter": 0
     },
     {
       "id": 5,
-      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-      "title": "Card Titulo5",
-      "description": "Descrição Card",
+      "img": "https://ae01.alicdn.com/kf/He823e1f59e1f4f46b2d97ad5dc9569bfG/Anime-genshin-impacto-paimon-venti-klee-lumine-jean-caneca-de-cer-mica-copo-dos-desenhos-animados.jpg_640x640.jpg",
+      "title": "Caneca Klee",
+      "description": "Caneca com uma personagem do jogo Genshim Impact",
       "price": "30",
       "counter": 0
     },
     {
       "id": 6,
-      "img": "https://cdn.pixabay.com/photo/2013/07/13/11/43/cat-158514_960_720.png",
-      "title": "Card Titulo6",
-      "description": "Descrição Card",
+      "img": "https://ae01.alicdn.com/kf/Sc2e6957ac1634f38986ba4cd6da9b300v/Hq-gengar-pokemon-brinquedos-de-pel-cia-pikachu-recheado-boneca-para-crian-as-charmander-bulbasaur-squirtle.jpg_Q90.jpg_.webp",
+      "title": "Pelucia Gengar",
+      "description": "Pelucia do Pokemon Gengar",
       "price": "20",
       "counter": 0
     }
