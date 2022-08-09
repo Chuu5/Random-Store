@@ -69,9 +69,9 @@ function Home( {setUser, setLogged} ) {
       <section className="flex-home">
 
         <div className="home-text">
-          <h2>Fictional Shopping</h2>
+          <h2>Random Store</h2>
           <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum architecto culpa sapiente, ipsam aliquam quas soluta vel voluptatum nihil amet molestiae impedit voluptatibus suscipit minima pariatur laborum. Dolor, vitae.
+            Uma loja de coisas aleatorias que gosto
           </h3>
         </div>
 
