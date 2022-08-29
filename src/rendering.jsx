@@ -21,7 +21,7 @@ function Rendering() {
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<Nav user={user} />}>
-            <Route path='/' element={<Home setUser={setUser} setLogged={setIsLoggedIn}/>}/>
+            <Route path='/' element={<Home setUser={setUser} user={user} setLogged={setIsLoggedIn} logged={isLoggedIn}/>}/>
             <Route path='/purchase' element={isLoggedIn ? <Purchase/> : <LoggedOff/>}/>
             <Route path='/account' element={<Account setLogged={setIsLoggedIn} setUser={setUser} user={user} />}/>
           </Route>
