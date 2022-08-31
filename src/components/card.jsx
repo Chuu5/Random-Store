@@ -33,7 +33,6 @@ function Card( {total, onAdd, product } ) {
             <button className="add-Cart"
             onClick={() => {
                 onAdd(product)
-                total((value) => value + parseInt(product.price))
             }
             }>
                 Adicione ao carrinho

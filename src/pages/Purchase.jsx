@@ -8,6 +8,7 @@ import { useState } from "react"
 import CartOpened from "../components/CartOpened"
 
 import { motion } from "framer-motion"
+import { useEffect } from "react"
 
 
 
@@ -22,6 +23,7 @@ function Purchase() {
     
     const [openCart, setOpenCart] = useState(false)
     
+    let total = orderTotal()
     const [totalPrice, setTotalPrice] = useState(0)
 
 
@@ -49,8 +51,8 @@ function Purchase() {
     const onRemove = (product) => {
         setQuantity(quantity - 1)
         const exist = cartItems.find( (prod) => prod.id === product.id)
-        setTotalPrice(totalPrice - product.price)
-        if(exist && exist.quantidade > 1) {
+        // setTotalPrice(totalPrice - product.price)
+        if (exist && exist.quantidade > 1) {
             setCartItems(
                 cartItems.map( (prod) => {
                     return prod.id === product.id ?  {...exist, quantidade: exist.quantidade - 1} : prod
@@ -62,8 +64,13 @@ function Purchase() {
             }))
         }
     }
-    
 
+    function orderTotal() {
+        return cartItems.reduce( (prev, curr) => (parseInt(curr.price) * curr.quantidade) + prev, 0)
+    }
+
+    
+    useEffect( () => {setTotalPrice(total)}, [cartItems])
     
     return (
         
@@ -79,7 +86,7 @@ function Purchase() {
                 {products.map( (product) => {
                 
         
-                    return <Card total={setTotalPrice} items={cartItems} onAdd={onAdd} key={product.id} product={product} />
+                    return <Card items={cartItems} onAdd={onAdd} key={product.id} product={product} />
                 })}
 
             </section>
@@ -98,7 +105,7 @@ function Purchase() {
                 {openCart && (
                     <>
                         <CartOpened onRemove={onRemove} onAdd={onAdd} items={cartItems}
-                        total={setTotalPrice} />
+                         />
 
                         <div className="clear-container">
                             {quantity > 0 && (
@@ -107,7 +114,7 @@ function Purchase() {
                             <button className="clear" onClick={ () => {
                                 setCartItems([])
                                 setQuantity(0)
-                                setTotalPrice(0)
+                            
                             }}>Limpar Cart</button>
                         </div>
 

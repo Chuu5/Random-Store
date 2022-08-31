@@ -30,7 +30,6 @@ function CartOpened({items, total, onAdd, onRemove}) {
                                 
                                 <button className="increment" onClick={() => {
                                     onAdd(item)
-                                    total( (value) => value + parseInt(item.price))
                                 }}>+</button>
 
                                 <button className="decrement" onClick={() => {
