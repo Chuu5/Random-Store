@@ -23,7 +23,7 @@ function Rendering() {
           <Route path='/' element={<Nav user={user} />}>
             <Route path='/' element={<Home setUser={setUser} user={user} setLogged={setIsLoggedIn} logged={isLoggedIn}/>}/>
             <Route path='/purchase' element={isLoggedIn ? <Purchase/> : <LoggedOff/>}/>
-            <Route path='/account' element={<Account setLogged={setIsLoggedIn} setUser={setUser} user={user} />}/>
+            <Route path='/account' element={isLoggedIn ? <Account setLogged={setIsLoggedIn} setUser={setUser} user={user} /> : <LoggedOff />}/>
           </Route>
         </Routes>
     </AnimatePresence>
