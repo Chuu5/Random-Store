@@ -98,7 +98,7 @@ function Purchase() {
                     <button onClick={() => {
                         setOpenCart(!openCart)
                     }}>
-                        <AiOutlineArrowUp />
+                        <AiOutlineArrowUp data-testid="arrow-up"/>
                     </button>
                 </div>
 
