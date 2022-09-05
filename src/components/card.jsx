@@ -9,13 +9,7 @@ function Card( {total, onAdd, product } ) {
 
 
     return (
-        <div className="card">
-            <div className="img-container">
-                <img src={product.img} alt="" />
-                {/* {count > 0 && (
-                    <div className="counter"> { count } </div>
-                )}  */}
-            </div>
+        <div className="card" data-testid="card">
             <div className="text">
                 <div className="title">
                     <h2> {product.title} </h2>
