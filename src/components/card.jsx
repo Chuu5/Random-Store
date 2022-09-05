@@ -25,6 +25,7 @@ function Card( {total, onAdd, product } ) {
             </div>
             
             <button className="add-Cart"
+            data-testid="add-cart"
             onClick={() => {
                 onAdd(product)
             }

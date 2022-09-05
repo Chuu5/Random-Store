@@ -1,7 +1,7 @@
 import "./cartOpened.css"
 
 
-function CartOpened({items, total, onAdd, onRemove}) {
+function CartOpened({items, onAdd, onRemove}) {
 
 
     return (
