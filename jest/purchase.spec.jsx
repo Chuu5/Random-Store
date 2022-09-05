@@ -32,6 +32,4 @@ describe("Purchase Page", () => {
         
         expect(titles.length).toBe(2)
     })
-
-    
 })
