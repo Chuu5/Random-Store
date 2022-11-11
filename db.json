@@ -4,28 +4,28 @@
   "products": [
     {
       "id": 1,
-      "img": "https://animestore.cz/110394-large_default/hololive-production-nendoroid-action-figure-gawr-gura-10-cm.jpg",
+      "img": "./Nendoroid.webp",
       "title": "Nendoroid",
       "price": "270",
       "counter": 0
     },
     {
       "id": 2,
-      "img": "https://ae01.alicdn.com/kf/S5b8a50b9ccb9441f8d0347749b417d8aW/Anime-Hololive-Hoodies-Ame-Aesthetic-Clothes-Women-Spring-and-Autumn-Sweatshirt-Vintage-Kawaii-Cartoon-Hoodie-Harajuku.jpg_Q90.jpg_.webp",
+      "img": "./Blusa.webp",
       "title": "Moletom",
       "price": "50",
       "counter": 0
     },
     {
       "id": 3,
-      "img": "https://ae01.alicdn.com/kf/Ha09a5ae09cb34759b21bba8a0275d079S/2021-venda-quente-estilo-nico-popular-topos-omori-camiseta-casal-impresso-hip-pop-casual-de-alta.jpg_Q90.jpg_.webp",
+      "img": "./Camiseta.webp",
       "title": "Camiseta",
       "price": "80",
       "counter": 0
     },
     {
       "id": 4,
-      "img": "https://m.media-amazon.com/images/I/61D0neZIgNL._AC_SY450_.jpg",
+      "img": "./Headset.jpg",
       "title": "Headset",
       "price": "240",
       "counter": 0

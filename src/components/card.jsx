@@ -1,15 +1,16 @@
-import { useState } from "react"
-import { set } from "react-hook-form"
 
-function Card( {total, onAdd, product } ) {
+function Card( {onAdd, product } ) {
 
-    // const [count, setCount] = useState(0)
 
    
 
 
     return (
         <div className="card" data-testid="card">
+            <div className="img-container">
+                <img src={product.img} alt="" />
+            </div>
+
             <div className="text">
                 <div className="title">
                     <h2> {product.title} </h2>
