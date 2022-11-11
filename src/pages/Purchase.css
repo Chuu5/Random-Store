@@ -96,7 +96,6 @@
 
 .cart-title {
     display: flex;
-    padding-inline: 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -112,7 +111,6 @@
 }
 
 .cart .clear {
-    margin-top: auto;
     padding: 8px 10px;
     width: 40%;
     
@@ -123,6 +121,7 @@
     outline: none;
     cursor: pointer;
     transition: 600ms;
+    margin-left: auto;
 }
 
 .cart .clear:hover {
@@ -131,6 +130,7 @@
 
 .clear-container {
     display: flex;
+    align-items: center;
     gap: 20px;
     text-align: center;
 }
@@ -145,6 +145,15 @@
     .cart.opened {
         width: 100vw;
         height: 100%;
+    }
+
+    .clear-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart .clear {
+        margin-left: 0; 
     }
 
 }

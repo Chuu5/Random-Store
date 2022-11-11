@@ -109,7 +109,7 @@ function Purchase() {
 
                         <div className="clear-container">
                             {quantity > 0 && (
-                                <h3>Preço Total: {totalPrice} </h3>
+                                <h3>Preço Total: R${totalPrice} </h3>
                             )}
                             <button className="clear" onClick={ () => {
                                 setCartItems([])

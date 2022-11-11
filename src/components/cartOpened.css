@@ -18,7 +18,21 @@
 }
 
 .cart-item .item-img img {
+    width: 50px;
+}
+
+.cart-item .item-title {
+    text-align: center;
+    width: 80%;
+}
+
+.cart-item .item-img img {
     height: 100%;
+}
+
+.cart-item .price, .cart-item .quantity {
+    text-align: center;
+    width: fit-content;
 }
 
 
@@ -31,6 +45,10 @@
     transition: 400ms;
 }
 
+.increment {
+    margin-left: auto;
+}
+
 .increment:hover, .decrement:hover {
     background-color: #7d35f9;
 }
@@ -38,10 +56,14 @@
 @media (max-width: 600px) {
     .cart-item {
         gap: 10px;
+        justify-content: space-between;
     }
 
-    .cart-item button {
-        padding: 5px;
+    .increment {
+        margin-left: 0;
     }
 
+    .cart-item .item-title  {
+        display: none;
+    }
 }
