@@ -35,12 +35,16 @@ a {
 
 .home-text h2 {
     font-size: 40px;
-    color: white;
+    color: #d6bbfe;
+    font-family: 'Inter', sans-serif;
 }
 
 .home-text h3 {
     font-size: 18px;
     line-height: 1.7;
+    font-weight: 500;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
 }
 
 

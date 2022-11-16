@@ -24,6 +24,7 @@
 .cart-item .item-title {
     text-align: center;
     width: 80%;
+    font-family: "Inter", sans-serif;
 }
 
 .cart-item .item-img img {
@@ -33,6 +34,7 @@
 .cart-item .price, .cart-item .quantity {
     text-align: center;
     width: fit-content;
+    font-family: "Roboto", sans-serif;
 }
 
 
